@@ -41,7 +41,7 @@ Desktop:
 
 🚀 How to Run This Project Locally:
 1. Clone the repository:
-git clone https://github.com/yourusername/tesla-website.git
+[git clone https://github.com/yourusername/tesla-website.git](https://github.com/Sparshtaparia/Tesla_Website_Tutorial-.git)
 2. Navigate to the project directory:
 cd tesla-website
 3. Open index.html in your browser:
