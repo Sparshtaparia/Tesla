@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Website</title>
+    <link rel="stylesheet" href="file.css">
+
+    <link rel="icon" type="image/png" href="tesla_img/images/logo2.png">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="tesla_img/images/logo.png" class="logo">
+            <ul>
+                <li><a href="#" id="roadster">Roadster</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modelx">Model X</a></li>
+                <li><a href="#" id="modely">Model Y</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve Now</a>
+        </nav>
+
+        <div class="info">
+            <div>
+                <h2 id="time">1.9 s</h2>
+                <p>0-60 mph</p>
+            </div>
+            <div>
+                <h2 id="speed">250 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="range">620 mi</h2>
+                <p>Max Range</p>
+            </div>
+            <div class ="line">
+            </div>
+            <div>
+                <h2 id="model">Roadster</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var header = document.getElementById("header");
+        var rs = document.getElementById("roadster");
+        var m3 = document.getElementById("model3");
+        var mx = document.getElementById("modelx");
+        var my = document.getElementById("modely");
+        var model = document.getElementById("model");
+        var time = document.getElementById("time");
+        var speed = document.getElementById("speed");
+        var range = document.getElementById("range");
+        
+
+        rs.onclick = function() {
+            header.style.backgroundImage = "url(tesla_img/images/download2.webp)"
+            model.innerHTML = "Roadster";
+            time.innerHTML = "1.9s";
+            speed.innerHTML = "250 mph";
+            range.innerHTML = "620 mi";
+        }
+        m3.onclick = function() {
+            header.style.backgroundImage = "url(tesla_img/images/model3.jpg)"
+            model.innerHTML = "Model 3";
+            time.innerHTML = "4.2s";
+            speed.innerHTML = "272 mi";
+            range.innerHTML = "363 mi";
+        }
+        mx.onclick = function() {
+            header.style.backgroundImage = "url(tesla_img/images/modelx.jpg)"
+            model.innerHTML = "Model X";
+            time.innerHTML = "2.5s";
+            speed.innerHTML = "163 mph";
+            range.innerHTML = "335 mi";
+        }
+        my.onclick = function() {
+            header.style.backgroundImage = "url(tesla_img/images/modely.webp)"
+            model.innerHTML = "Model Y";
+            time.innerHTML = "4.8s";
+            speed.innerHTML = "135 mph";
+            range.innerHTML = "279 mi";
+        }
+    </script>
+
+</body>
+</html>
